@@ -1,0 +1,9 @@
+{
+  "hips button":{
+    "prefix":"hips-button",
+    "body":[
+      "<hips-button $1 ></hips-button>"
+    ],
+    "description": "新建 hips-button"
+  }
+}

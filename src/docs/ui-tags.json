@@ -1,0 +1,31 @@
+{
+  "hips-button": {
+    "description": "hips-button",
+    "attributes": {
+      "type": {
+        "description": "按钮类型",
+        "optionType": "string",
+        "defaultValue": "-",
+        "options": [
+          "primary",
+          "warning",
+          "danger"
+        ]
+      },
+      "size": {
+        "description": "按钮尺寸",
+        "optionType": "string",
+        "defaultValue": "-",
+        "options": [
+          "large",
+          "small"
+        ]
+      },
+      "html-type": {
+        "description": "设置 button 原生的 type 值",
+        "optionType": "string",
+        "defaultValue": "-"
+      }
+    }
+  }
+}
