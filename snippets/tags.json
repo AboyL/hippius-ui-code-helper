@@ -1,9 +1,473 @@
 {
-  "hips button":{
-    "prefix":"hips-button",
-    "body":[
+  "hips-view": {
+    "prefix": "hips-view",
+    "body": [
+      "<hips-view>",
+      "\t$1",
+      "</hips-view"
+    ],
+    "description": "新建 hips-view"
+  },
+  "hips-nav-bar": {
+    "prefix": "hips-nav-bar",
+    "body": [
+      "<hips-nav-bar />"
+    ],
+    "description": "新建 hips-nav-bar"
+  },
+  "hips-row": {
+    "prefix": "hips-row",
+    "body": [
+      "<hips-row>",
+      "\t$1",
+      "</hips-row"
+    ],
+    "description": "新建 hips-row"
+  },
+  "hips-col": {
+    "prefix": "hips-col",
+    "body": [
+      "<hips-col span=\"$1\">",
+      "\t$2",
+      "</hips-col>"
+    ],
+    "description": "新建 hips-col"
+  },
+  "hips-tab-bar": {
+    "prefix": "hips-tab-bar",
+    "body": [
+      "<hips-tab-bar>",
+      "\t$1",
+      "</hips-tab-bar>"
+    ],
+    "description": "新建 hips-tab-bar"
+  },
+  "hips-tab-bar-item": {
+    "prefix": "hips-tab-bar-item",
+    "body": [
+      "<hips-tab-bar-item>",
+      "\t$1",
+      "</hips-tab-bar-item>"
+    ],
+    "description": "新建 hips-tab-bar-item"
+  },
+  "hips-tabs": {
+    "prefix": "hips-tabs",
+    "body": [
+      "<hips-tabs>",
+      "\t$1",
+      "</hips-tabs>"
+    ],
+    "description": "新建 hips-tabs"
+  },
+  "hips-tab": {
+    "prefix": "hips-tab",
+    "body": [
+      "<hips-tab title=\"$1\">",
+      "\t$2",
+      "</hips-tab>"
+    ],
+    "description": "新建 hips-tab"
+  },
+  "hips-icon": {
+    "prefix": "hips-icon",
+    "body": [
+      "<hips-icon name=\"$1\" />"
+    ],
+    "description": "新建 hips-icon"
+  },
+  "hips-button": {
+    "prefix": "hips-button",
+    "body": [
       "<hips-button $1 ></hips-button>"
     ],
     "description": "新建 hips-button"
+  },
+  "hips-group": {
+    "prefix": "hips-group",
+    "body": [
+      "<hips-group>",
+      "\t$1",
+      "</hips-group>"
+    ],
+    "description": "新建 hips-group"
+  },
+  "hips-cell": {
+    "prefix": "hips-cell",
+    "body": [
+      "<hips-cell $1 ></hips-cell>"
+    ],
+    "description": "新建 hips-cell"
+  },
+  "hips-collapse": {
+    "prefix": "hips-collapse",
+    "body": [
+      "<hips-collapse>",
+      "\t$1",
+      "</hips-collapse>"
+    ],
+    "description": "新建 hips-collapse"
+  },
+  "hips-collapse-item": {
+    "prefix": "hips-collapse-item",
+    "body": [
+      "<hips-collapse-item>",
+      "\t$1",
+      "</hips-collapse-item>"
+    ],
+    "description": "新建 hips-collapse-item"
+  },
+  "hips-badge": {
+    "prefix": "hips-badge",
+    "body": [
+      "<hips-badge>",
+      "\t$1",
+      "</hips-badge>"
+    ],
+    "description": "新建 hips-badge"
+  },
+  "hips-spin": {
+    "prefix": "hips-spin",
+    "body": [
+      "<hips-spin $1 ></hips-spin>"
+    ],
+    "description": "新建 hips-spin"
+  },
+  "hips-timeline": {
+    "prefix": "hips-timeline",
+    "body": [
+      "<hips-timeline>",
+      "\t$1",
+      "</hips-timeline>"
+    ],
+    "description": "新建 hips-timeline"
+  },
+  "hips-timeline-item": {
+    "prefix": "hips-timeline-item",
+    "body": [
+      "<hips-timeline-item $1 ></hips-timeline-item>"
+    ],
+    "description": "新建 hips-timeline-item"
+  },
+  "hips-picker": {
+    "prefix": "hips-picker",
+    "body": [
+      "<hips-picker $1 ></hips-picker>"
+    ],
+    "description": "新建 hips-picker"
+  },
+  "hips-datetime": {
+    "prefix": "hips-datetime",
+    "body": [
+      "<hips-datetime $1 ></hips-datetime>"
+    ],
+    "description": "新建 hips-datetime"
+  },
+  "hips-circle": {
+    "prefix": "hips-circle",
+    "body": [
+      "<hips-circle $1 ></hips-circle>"
+    ],
+    "description": "新建 hips-circle"
+  },
+  "hips-progress": {
+    "prefix": "hips-progress",
+    "body": [
+      "<hips-progress $1 ></hips-progress>"
+    ],
+    "description": "新建 hips-progress"
+  },
+  "hips-tip": {
+    "prefix": "hips-tip",
+    "body": [
+      "<hips-tip $1 ></hips-tip>"
+    ],
+    "description": "新建 hips-tip"
+  },
+  "hips-tag": {
+    "prefix": "hips-tag",
+    "body": [
+      "<hips-tag>",
+      "\t$1",
+      "</hips-tag>"
+    ],
+    "description": "新建 hips-tag"
+  },
+  "hips-input": {
+    "prefix": "hips-input",
+    "body": [
+      "<hips-input $1 ></hips-input>"
+    ],
+    "description": "新建 hips-input"
+  },
+  "hips-search": {
+    "prefix": "hips-search",
+    "body": [
+      "<hips-search $1 ></hips-search>"
+    ],
+    "description": "新建 hips-search"
+  },
+  "hips-textarea": {
+    "prefix": "hips-textarea",
+    "body": [
+      "<hips-textarea $1 ></hips-textarea>"
+    ],
+    "description": "新建 hips-textarea"
+  },
+  "hips-radio-group": {
+    "prefix": "hips-radio-group",
+    "body": [
+      "<hips-radio-group>",
+      "\t$1",
+      "</hips-radio-group>"
+    ],
+    "description": "新建 hips-radio-group"
+  },
+  "hips-radio": {
+    "prefix": "hips-radio",
+    "body": [
+      "<hips-radio>",
+      "\t$1",
+      "</hips-radio>"
+    ],
+    "description": "新建 hips-radio"
+  },
+  "hips-checkbox": {
+    "prefix": "hips-checkbox",
+    "body": [
+      "<hips-checkbox $1 ></hips-checkbox>"
+    ],
+    "description": "新建 hips-checkbox"
+  },
+  "hips-rate": {
+    "prefix": "hips-rate",
+    "body": [
+      "<hips-rate $1 ></hips-rate>"
+    ],
+    "description": "新建 hips-rate"
+  },
+  "hips-stepper": {
+    "prefix": "hips-stepper",
+    "body": [
+      "<hips-stepper $1 ></hips-stepper>"
+    ],
+    "description": "新建 hips-stepper"
+  },
+  "hips-switch": {
+    "prefix": "hips-switch",
+    "body": [
+      "<hips-switch $1 ></hips-switch>"
+    ],
+    "description": "新建 hips-switch"
+  },
+  "hips-switch-cell": {
+    "prefix": "hips-switch-cell",
+    "body": [
+      "<hips-switch-cell $1 ></hips-switch-cell>"
+    ],
+    "description": "新建 hips-switch-cell"
+  },
+  "hips-uploader": {
+    "prefix": "hips-uploader",
+    "body": [
+      "<hips-uploader $1 ></hips-uploader>"
+    ],
+    "description": "新建 hips-uploader"
+  },
+  "hips-number-keyboard": {
+    "prefix": "hips-number-keyboard",
+    "body": [
+      "<hips-number-keyboard $1 ></hips-number-keyboard>"
+    ],
+    "description": "新建 hips-number-keyboard"
+  },
+  "hips-signature": {
+    "prefix": "hips-signature",
+    "body": [
+      "<hips-signature $1 ></hips-signature>"
+    ],
+    "description": "新建 hips-signature"
+  },
+  "hips-field": {
+    "prefix": "hips-field",
+    "body": [
+      "<hips-field $1 ></hips-field>"
+    ],
+    "description": "新建 hips-field"
+  },
+  "hips-form": {
+    "prefix": "hips-form",
+    "body": [
+      "<hips-form>",
+      "\t$1",
+      "</hips-form>"
+    ],
+    "description": "新建 hips-form"
+  },
+  "hips-form-item": {
+    "prefix": "hips-form-item",
+    "body": [
+      "<hips-form-item $1 ></hips-form-item>"
+    ],
+    "description": "新建 hips-form-item"
+  },
+  "$hips.validate":{
+    "prefix": "$hips.validate",
+    "body": [
+      "$hips.validate"
+    ],
+    "description": "$hips.validate"
+  },
+  "hips-swipeout": {
+    "prefix": "hips-swipeout",
+    "body": [
+      "<hips-swipeout>",
+      "\t$1",
+      "</hips-swipeout>"
+    ],
+    "description": "新建 hips-swipeout"
+  },
+  "hips-swipeout-list": {
+    "prefix": "hips-swipeout-list",
+    "body": [
+      "<hips-swipeout-list>",
+      "\t$1",
+      "</hips-swipeout-list>"
+    ],
+    "description": "新建 hips-swipeout-list"
+  },
+  "hips-slide": {
+    "prefix": "hips-slide",
+    "body": [
+      "<hips-slide>",
+      "\t$1",
+      "</hips-slide>"
+    ],
+    "description": "新建 hips-slide"
+  },
+  "hips-slide-item": {
+    "prefix": "hips-slide-item",
+    "body": [
+      "<hips-slide-item>",
+      "\t$1",
+      "</hips-slide-item>"
+    ],
+    "description": "新建 hips-slide-item"
+  },
+  "hips-scroll": {
+    "prefix": "hips-scroll",
+    "body": [
+      "<hips-scroll $1 ></hips-scroll>"
+    ],
+    "description": "新建 hips-scroll"
+  },
+  "hips-sticky": {
+    "prefix": "hips-sticky",
+    "body": [
+      "<hips-sticky>",
+      "\t$1",
+      "</hips-sticky>"
+    ],
+    "description": "新建 hips-sticky"
+  },
+  "hips-index-list": {
+    "prefix": "hips-index-list",
+    "body": [
+      "<hips-index-list $1 ></hips-index-list>"
+    ],
+    "description": "新建 hips-index-list"
+  },
+  "hips-popup": {
+    "prefix": "hips-popup",
+    "body": [
+      "<hips-popup $1 ></hips-popup>"
+    ],
+    "description": "新建 hips-popup"
+  },
+  "hips-actionsheet": {
+    "prefix": "hips-actionsheet",
+    "body": [
+      "<hips-actionsheet $1 ></hips-actionsheet>"
+    ],
+    "description": "新建 hips-actionsheet"
+  },
+  "hips-indicator": {
+    "prefix": "hips-indicator",
+    "body": [
+      "<hips-indicator $1 ></hips-indicator>"
+    ],
+    "description": "新建 hips-indicator"
+  },
+  "$hips.toast":{
+    "prefix": "$hips.toast",
+    "body": [
+      "$hips.toast"
+    ],
+    "description": "$hips.toast"
+  },
+  "$hips.notify":{
+    "prefix": "$hips.notify",
+    "body": [
+      "$hips.notify"
+    ],
+    "description": "$hips.notify"
+  },
+  "$hips.dialog.alert":{
+    "prefix": "$hips.dialog.alert",
+    "body": [
+      "$hips.dialog.alert"
+    ],
+    "description": "$hips.dialog.alert"
+  },
+  "$hips.dialog.confirm":{
+    "prefix": "$hips.dialog.confirm",
+    "body": [
+      "$hips.dialog.confirm"
+    ],
+    "description": "$hips.dialog.confirm"
+  },
+  "$hips.imagePreview.show":{
+    "prefix": "$hips.imagePreview.show",
+    "body": [
+      "$hips.imagePreview.show"
+    ],
+    "description": "$hips.imagePreview.show"
+  },
+  "$hips.imagePreview.destroy":{
+    "prefix": "$hips.imagePreview.destroy",
+    "body": [
+      "$hips.imagePreview.destroy()"
+    ],
+    "description": "$hips.imagePreview.destroy"
+  },
+  "$hips.previewer.show":{
+    "prefix": "$hips.previewer.show",
+    "body": [
+      "$hips.previewer.show"
+    ],
+    "description": "$hips.previewer.show"
+  },
+  "hips-fab": {
+    "prefix": "hips-fab",
+    "body": [
+      "<hips-fab>",
+      "\t$1",
+      "</hips-fab>"
+    ],
+    "description": "新建 hips-fab"
+  },
+  "hips-fab-item": {
+    "prefix": "hips-fab-item",
+    "body": [
+      "<hips-fab-item $1 ></hips-fab-item>"
+    ],
+    "description": "新建 hips-fab-item"
+  },
+  "hips-calendar": {
+    "prefix": "hips-calendar",
+    "body": [
+      "<hips-calendar $1 ></hips-calendar>"
+    ],
+    "description": "新建 hips-calendar"
   }
 }

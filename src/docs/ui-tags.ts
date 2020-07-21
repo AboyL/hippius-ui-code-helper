@@ -5,13 +5,12 @@ export interface TagAttr {
   description: string;
   optionType?: string;
   type?:string;
-  defaultValue: string;
+  defaultValue?: string;
   options?: string[];
 }
 
 export interface TagDocs {
   description: string;
-  defaults?: string[];
   attributes: {
     [_props: string]: TagAttr
   };
