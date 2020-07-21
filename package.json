@@ -15,6 +15,20 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
+		"commands": [
+			{
+				"command": "hippius.search",
+				"title": "hippius.search"
+			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"command": "hippius.search",
+					"group": "navigation"
+				}
+			]
+		},
 		"snippets": [
 			{
 				"language": "vue-html",
