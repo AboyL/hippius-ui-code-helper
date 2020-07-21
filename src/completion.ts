@@ -10,13 +10,11 @@ import {
 
 import TAGS, { TagAttr } from './docs/ui-tags';
 
-const prettyHTML = require('pretty');
 
 export interface TagObject {
   text: string;
   offset: number;
 }
-
 
 export class HippiusCompletionItemProvider implements CompletionItemProvider {
   private _document!: TextDocument;

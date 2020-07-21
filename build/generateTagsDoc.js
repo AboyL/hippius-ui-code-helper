@@ -1,38 +1,69 @@
 const fs = require('fs-extra');
 const unified = require('unified');
 const markdown = require('remark-parse');
-const glob = require('glob');
-
-const prefix = 'hips';
-const exclusiveList = ["toast", "notify", "dialog", 'locale','validate'];
-const allMd = glob.sync('./hips-vue-ui/packages/**/zh-CN.md');
-const reg = new RegExp("./hips-vue-ui/packages/(.*)/zh-CN.md");
-const tagList = allMd.map(v => reg.exec(v)[1]); // 全部的内容 不要做容错处理 当出现问题的时候可以进行 查找
+const _ = require('lodash');
+const {
+  prefix,
+  exclusiveList,
+  allMd,
+  tagList,
+  compatibilityList
+} = require('./helper');
 
 const run = () => {
 
   const resultJson = {};
   allMd.forEach((mdPath, index) => {
-
-    if (exclusiveList.includes(tagList[index])) {
+    const tagFileName = tagList[index];
+    if (exclusiveList.includes(tagFileName)) {
       return;
     }
 
     const data = fs.readFileSync(mdPath, {
       encoding: 'utf-8'
     });
+
     const tree = unified().use(markdown).parse(data);
-    const tagName = `${prefix}-${tagList[index]}`;
+    let tagName = `${prefix}-${tagList[index]}`;
+
     resultJson[tagName] = {
       description: tagName,
       attributes: {}
     };
 
-    for (let item of tree.children) {
-
+    for (let i = 0; i < tree.children.length; i++) {
+      const item = tree.children[i];
       if (item.type === "table") {
-        // 只处理一个table
+        // 处理一些特异性的内容
+        let isUnCompatibility = true;
+        const compatibility = compatibilityList[tagFileName];
+        if (compatibility) {
+          isUnCompatibility = false;
+          // 修改tag等
+          if (_.isArray(compatibility)) {
+            const titleItem = tree.children[i - 1];
+            if (titleItem.type === 'heading') {
+              const header = titleItem.children.map(v => v.value).join('').toLocaleLowerCase();
+              const title = _.kebabCase(titleItem.children.map(v => v.value).join('').split(' ')[0]);
+              if (header.includes('event') || header.includes('slot')) {
+                // return;
+                continue;
+              } else if (title === tagFileName || compatibility.indexOf(title) !== -1) {
+                // compatibilityTree[`${prefix}-${title}`] = item;
+                tagName = `${prefix}-${title}`;
+                resultJson[tagName] = {
+                  description: tagName,
+                  attributes: {}
+                };
+
+              } else {
+                continue;
+              }
+            }
+          }
+        }
         // 获取到对应的内容 默认值跟可选值可能有变化
+        // 获取到对应的内容 
         let defaultGap = null;
         let optionsGap = null;
         let descIndex = 1; // 默认第二个是说明
@@ -127,10 +158,14 @@ const run = () => {
             }
           });
         }
-        break;
+        if (isUnCompatibility) {
+          // 非特异 直接跳出
+          break;
+        }
       }
     }
   });
+
   // 生成文件
   fs.writeJSONSync('../src/docs/ui-tags.json', resultJson, {
     spaces: '\t'
@@ -138,10 +173,3 @@ const run = () => {
 };
 
 run();
-
-module.exports={
-  prefix, 
-  exclusiveList,
-  allMd,
-  tagList
-};

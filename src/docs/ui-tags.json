@@ -201,6 +201,89 @@
 	"hips-cell": {
 		"description": "hips-cell",
 		"attributes": {
+			"icon": {
+				"description": "左侧图标，可选值见 Icon 组件",
+				"optionType": "string",
+				"defaultValue": "-"
+			},
+			"title": {
+				"description": "左侧标题",
+				"optionType": "string|number",
+				"defaultValue": "-"
+			},
+			"value": {
+				"description": "右侧内容",
+				"optionType": "string|number",
+				"defaultValue": "-"
+			},
+			"description": {
+				"description": "标题下方的描述信息",
+				"optionType": "string",
+				"defaultValue": "-"
+			},
+			"border": {
+				"description": "是否显示内边框",
+				"optionType": "boolean",
+				"defaultValue": "true"
+			},
+			"value-align": {
+				"description": "是否使 value 的内容垂直居中",
+				"optionType": "boolean",
+				"defaultValue": "false"
+			},
+			"url": {
+				"description": "跳转链接",
+				"optionType": "string",
+				"defaultValue": "-"
+			},
+			"to": {
+				"description": "路由跳转对象，同 vue-router 的 to",
+				"options": [
+					"vue-router"
+				],
+				"optionType": "string|object",
+				"defaultValue": "-"
+			},
+			"replace": {
+				"description": "跳转时是否替换当前 history",
+				"optionType": "string",
+				"defaultValue": "false"
+			},
+			"clickable": {
+				"description": "是否开启点击反馈",
+				"optionType": "boolean",
+				"defaultValue": "false"
+			},
+			"is-link": {
+				"description": "是否展示右侧箭头并开启点击反馈",
+				"optionType": "boolean",
+				"defaultValue": "false"
+			},
+			"required": {
+				"description": "是否显示表单必填星号",
+				"optionType": "boolean",
+				"defaultValue": "false"
+			},
+			"arrow-direction": {
+				"description": "箭头方向，可选值为 left up down",
+				"options": [
+					"left",
+					"up",
+					"down"
+				],
+				"optionType": "string",
+				"defaultValue": "-"
+			},
+			"ellipsis": {
+				"description": "是否开启内容的行内省略号模式",
+				"optionType": "boolean",
+				"defaultValue": "false"
+			}
+		}
+	},
+	"hips-group": {
+		"description": "hips-group",
+		"attributes": {
 			"border": {
 				"description": "是否显示外边框",
 				"optionType": "boolean",
@@ -240,6 +323,46 @@
 					" ",
 					"right"
 				]
+			}
+		}
+	},
+	"hips-checkbox-group": {
+		"description": "hips-checkbox-group",
+		"attributes": {
+			"value": {
+				"description": "v-model 绑定的选中集合",
+				"optionType": "array",
+				"defaultValue": "-"
+			},
+			"options": {
+				"description": "复选框数组",
+				"optionType": "array",
+				"defaultValue": "[]"
+			},
+			"max": {
+				"description": "最多选择个数",
+				"optionType": "string|number",
+				"defaultValue": "Infinity"
+			},
+			"min": {
+				"description": "最小选择个数",
+				"optionType": "string|number",
+				"defaultValue": "0"
+			},
+			"position": {
+				"description": "位置",
+				"optionType": "string|left",
+				"defaultValue": "left right"
+			},
+			"horizontal": {
+				"description": "是否水平排列",
+				"optionType": "boolean|false",
+				"defaultValue": "-"
+			},
+			"col-num": {
+				"description": "一行有几列",
+				"optionType": "number",
+				"defaultValue": "1"
 			}
 		}
 	},
@@ -285,6 +408,26 @@
 	},
 	"hips-col": {
 		"description": "hips-col",
+		"attributes": {
+			"span": {
+				"description": "列元素宽度",
+				"optionType": "string|number",
+				"defaultValue": "-"
+			},
+			"offset": {
+				"description": "列元素偏移距离",
+				"optionType": "string|number",
+				"defaultValue": "-"
+			},
+			"tag": {
+				"description": "自定义元素标签",
+				"optionType": "string",
+				"defaultValue": "div"
+			}
+		}
+	},
+	"hips-row": {
+		"description": "hips-row",
 		"attributes": {
 			"type": {
 				"description": "布局方式，可选值为flex",
@@ -338,6 +481,51 @@
 				"description": "是否开启手风琴模式",
 				"optionType": "boolean",
 				"defaultValue": "false"
+			}
+		}
+	},
+	"hips-collapse-item": {
+		"description": "hips-collapse-item",
+		"attributes": {
+			"name": {
+				"description": "面板唯一标识符，默认为索引值",
+				"optionType": "string|number",
+				"defaultValue": "index (数字)"
+			},
+			"disabled": {
+				"description": "是否禁用面板",
+				"optionType": "boolean",
+				"defaultValue": "false"
+			},
+			"icon": {
+				"description": "左侧图标，可选值见 Icon 组件",
+				"optionType": "string",
+				"defaultValue": "-"
+			},
+			"title": {
+				"description": "左侧标题",
+				"optionType": "string|number",
+				"defaultValue": "-"
+			},
+			"value": {
+				"description": "右侧内容",
+				"optionType": "string|number",
+				"defaultValue": "-"
+			},
+			"description": {
+				"description": "标题下方的描述信息",
+				"optionType": "string",
+				"defaultValue": "-"
+			},
+			"border": {
+				"description": "是否显示内边框",
+				"optionType": "boolean",
+				"defaultValue": "true"
+			},
+			"is-link": {
+				"description": "是否展示右侧箭头并开启点击反馈",
+				"optionType": "boolean",
+				"defaultValue": "true"
 			}
 		}
 	},
@@ -1415,6 +1603,16 @@
 			}
 		}
 	},
+	"hips-sticky-ele": {
+		"description": "hips-sticky-ele",
+		"attributes": {
+			"ele-key": {
+				"description": "吸顶元素的 key 值",
+				"optionType": "number|string",
+				"defaultValue": "-"
+			}
+		}
+	},
 	"hips-style": {
 		"description": "hips-style",
 		"attributes": {}
@@ -1481,6 +1679,26 @@
 				"description": "点击 swipeout 外部时是否关闭",
 				"optionType": "boolean",
 				"defaultValue": "true"
+			}
+		}
+	},
+	"hips-swipeout-button": {
+		"description": "hips-swipeout-button",
+		"attributes": {
+			"width": {
+				"description": "按钮宽度",
+				"optionType": "string|number",
+				"defaultValue": "40"
+			},
+			"bgColor": {
+				"description": "按钮背景颜色",
+				"optionType": "string",
+				"defaultValue": "#fff"
+			},
+			"fontColor": {
+				"description": "文本颜色",
+				"optionType": "string",
+				"defaultValue": "#000"
 			}
 		}
 	},
@@ -1579,6 +1797,54 @@
 			}
 		}
 	},
+	"hips-tab-bar-item": {
+		"description": "hips-tab-bar-item",
+		"attributes": {
+			"icon": {
+				"description": "图标名称 (可选值见 Icon 组件)",
+				"optionType": "string",
+				"defaultValue": "-"
+			},
+			"text": {
+				"description": "标签栏对应的显示内容",
+				"optionType": "string",
+				"defaultValue": "-"
+			},
+			"dot": {
+				"description": "是否显示小红点",
+				"optionType": "boolean",
+				"defaultValue": "-"
+			},
+			"badge-value": {
+				"description": "图标右上角提示信息",
+				"optionType": "string|number",
+				"defaultValue": "-"
+			},
+			"max-value": {
+				"description": "图标右上角徽章值的最大显示值",
+				"optionType": "string|number",
+				"defaultValue": "99"
+			},
+			"url": {
+				"description": "跳转链接",
+				"optionType": "string",
+				"defaultValue": "-"
+			},
+			"to": {
+				"description": "路由跳转对象，同 vue-router 的 to",
+				"options": [
+					"vue-router"
+				],
+				"optionType": "string|object",
+				"defaultValue": "-"
+			},
+			"replace": {
+				"description": "跳转时是否替换当前 history",
+				"optionType": "string",
+				"defaultValue": "false"
+			}
+		}
+	},
 	"hips-tabs": {
 		"description": "hips-tabs",
 		"attributes": {
@@ -1627,6 +1893,21 @@
 			},
 			"swipeable": {
 				"description": "是否可以滑动内容切换",
+				"optionType": "boolean",
+				"defaultValue": "false"
+			}
+		}
+	},
+	"hips-tab": {
+		"description": "hips-tab",
+		"attributes": {
+			"title": {
+				"description": "标题",
+				"optionType": "string",
+				"defaultValue": "-"
+			},
+			"disabled": {
+				"description": "是否禁用标签",
 				"optionType": "boolean",
 				"defaultValue": "false"
 			}
@@ -1760,6 +2041,29 @@
 				"description": "是否有最后一个幽灵节点",
 				"optionType": "boolean",
 				"defaultValue": "false"
+			}
+		}
+	},
+	"hips-timeline-item": {
+		"description": "hips-timeline-item",
+		"attributes": {
+			"color": {
+				"description": "节点颜色",
+				"optionType": "string",
+				"options": [
+					"任意色值"
+				],
+				"defaultValue": "blue"
+			},
+			"title": {
+				"description": "节点标题",
+				"optionType": "string",
+				"defaultValue": "-"
+			},
+			"content": {
+				"description": "节点内容",
+				"optionType": "string",
+				"defaultValue": "-"
 			}
 		}
 	},

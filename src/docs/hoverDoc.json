@@ -11,20 +11,32 @@
 	"hips-calendar": {
 		"hoverDoc": "| 参数            | 说明                                 | 类型        | 默认值                                   |     |\n| ------------- | ---------------------------------- | --------- | ------------------------------------- | --- |\n| tool-position | 控制按钮位置，可选 center、left、right        | `String`  | `center`                              |     |\n| select-month  | 需要展示的月份，格式 yyyy-MM                 | `String`  | `当前月`                                 |     |\n| week-label    | 周次标签                               | `Array`   | `['一', '二', '三', '四', '五', '六', '日']` |     |\n| week-start    | 每周行起始周次，默认 7(周日),可选[1-7]，分别代表周一至周日 | \\`String  | Number\\`                              | `7` |\n| full-line     | 是否使用上下月数据填满行空                      | `Boolean` | `false`                               |     |\n| append-data   | 附加数据                               | `Array`   | `-`                                   |     |\n| select-type   | 选择类型，可选 single，start-end，默认不可以选择   | `String`  | `-`                                   |     |\n| today-config  | 修改日历当天的颜色和描述                       | `Object`  | `{color: '#1f8ceb',dateLabel: '今'}`   |     |"
 	},
-	"hips-cell": {
+	"hips-group": {
 		"hoverDoc": "| 参数     | 说明      | 类型        | 默认值    |\n| ------ | ------- | --------- | ------ |\n| border | 是否显示外边框 | `Boolean` | `true` |"
+	},
+	"hips-cell": {
+		"hoverDoc": "| 参数              | 说明                           | 类型        | 默认值      |   |\n| --------------- | ---------------------------- | --------- | -------- | - |\n| icon            | 左侧图标，可选值见 Icon 组件            | `String`  | -        |   |\n| title           | 左侧标题                         | \\`String  | Number\\` | - |\n| value           | 右侧内容                         | \\`String  | Number\\` | - |\n| description     | 标题下方的描述信息                    | `String`  | -        |   |\n| border          | 是否显示内边框                      | `Boolean` | `true`   |   |\n| value-align     | 是否使 value 的内容垂直居中            | `Boolean` | `false`  |   |\n| url             | 跳转链接                         | `String`  | -        |   |\n| to              | 路由跳转对象，同 `vue-router` 的 to   | \\`String  | Object\\` | - |\n| replace         | 跳转时是否替换当前 history            | `String`  | `false`  |   |\n| clickable       | 是否开启点击反馈                     | `Boolean` | `false`  |   |\n| is-link         | 是否展示右侧箭头并开启点击反馈              | `Boolean` | `false`  |   |\n| required        | 是否显示表单必填星号                   | `Boolean` | `false`  |   |\n| arrow-direction | 箭头方向，可选值为 `left` `up` `down` | `String`  | -        |   |\n| ellipsis        | 是否开启内容的行内省略号模式               | `Boolean` | `false`  |   |"
 	},
 	"hips-checkbox": {
 		"hoverDoc": "| 参数       | 说明              | 类型        | 默认值      | 可选值            |   |\n| -------- | --------------- | --------- | -------- | -------------- | - |\n| value    | v-model 绑定复选框的值 | \\`Boolean | String\\` | -              | - |\n| label    | 复选框显示文字         | \\`Boolean | String\\` | -              | - |\n| disabled | 复选框是否被禁用        | `Boolean` | -        | -              |   |\n| option   | 配置项             | `Object`  | -        | -              |   |\n| position | 位置              | `String`  | `left`   | `left` `right` |   |"
 	},
+	"hips-checkbox-group": {
+		"hoverDoc": "| 参数         | 说明              | 类型        | 默认值      | 可选值            |   |\n| ---------- | --------------- | --------- | -------- | -------------- | - |\n| value      | v-model 绑定的选中集合 | `Array`   | -        | -              |   |\n| options    | 复选框数组           | `Array`   | \\[]      | -              |   |\n| max        | 最多选择个数          | \\`String  | Number\\` | `Infinity`     | - |\n| min        | 最小选择个数          | \\`String  | Number\\` | 0              | - |\n| position   | 位置              | `String`  | `left`   | `left` `right` | - |\n| horizontal | 是否水平排列          | `Boolean` | `false`  | -              | - |\n| col-num    | 一行有几列           | `Number`  | `1`      | -              |   |"
+	},
 	"hips-circle": {
 		"hoverDoc": "|      参数      |   类型   |      说明     |    默认值    |\n| :----------: | :----: | :---------: | :-------: |\n|   diameter   | Number |     圆环直径    |    100    |\n|  line-width  | Number |      线宽     |     4     |\n| stroke-color | String |      主色     | '#1f8ceb' |\n|  trail-color | String |     轨道色     | '#c9c9c9' |\n|  fill-color  | String |   圆环内部填充色   |   'none'  |\n|     speed    | Number | 缓动速度（单位 ms） |    500    |\n|     value    | Number |    当前百分比    |     0     |"
 	},
-	"hips-col": {
+	"hips-row": {
 		"hoverDoc": "| 参数      | 说明                                                     | 类型       | 默认值      |   |\n| ------- | ------------------------------------------------------ | -------- | -------- | - |\n| type    | 布局方式，可选值为flex                                          | `String` | -        |   |\n| gutter  | 列元素之间的间距（单位为px）                                        | \\`String | Number\\` | - |\n| tag     | 自定义元素标签                                                | `String` | `div`    |   |\n| justify | Flex 主轴对齐方式，可选值为 end/center/space-around/space-between | `String` | `start`  |   |\n| align   | Flex 交叉轴对齐方式，可选值为 center/bottom                        | `String` | `top`    |   |"
+	},
+	"hips-col": {
+		"hoverDoc": "| 参数     | 说明      | 类型       | 默认值      |   |\n| ------ | ------- | -------- | -------- | - |\n| span   | 列元素宽度   | \\`String | Number\\` | - |\n| offset | 列元素偏移距离 | \\`String | Number\\` | - |\n| tag    | 自定义元素标签 | `String` | `div`    |   |"
 	},
 	"hips-collapse": {
 		"hoverDoc": "| 参数        | 说明           | 类型        | 默认值     |          |   |\n| --------- | ------------ | --------- | ------- | -------- | - |\n| v-model   | 当前展开面板的 name | \\`Array   | String  | Number\\` | - |\n| accordion | 是否开启手风琴模式    | `Boolean` | `false` |          |   |"
+	},
+	"hips-collapse-item": {
+		"hoverDoc": "| 参数          | 说明                | 类型        | 默认值      |              |\n| ----------- | ----------------- | --------- | -------- | ------------ |\n| name        | 面板唯一标识符，默认为索引值    | \\`String  | Number\\` | `index` (数字) |\n| disabled    | 是否禁用面板            | `Boolean` | `false`  |              |\n| icon        | 左侧图标，可选值见 Icon 组件 | `String`  | -        |              |\n| title       | 左侧标题              | \\`String  | Number\\` | -            |\n| value       | 右侧内容              | \\`String  | Number\\` | -            |\n| description | 标题下方的描述信息         | `String`  | -        |              |\n| border      | 是否显示内边框           | `Boolean` | `true`   |              |\n| is-link     | 是否展示右侧箭头并开启点击反馈   | `Boolean` | `true`   |              |"
 	},
 	"hips-datetime-picker": {
 		"hoverDoc": "| 参数                     | 说明                       | 类型        | 默认值          |\n| ---------------------- | ------------------------ | --------- | ------------ |\n| title                  | 顶部栏标题（可以设置HTML字符串）       | `String`  | -            |\n| confirm-text           | 确认按钮文字                   | `String`  | `确认`         |\n| cancel-text            | 取消按钮文字                   | `String`  | `取消`         |\n| min-year               | 设置最小年份                   | `Number`  | -            |\n| max-year               | 设置最大年份                   | `Number`  | -            |\n| start-date             | 限定最小日期，格式必须与`format`保持一致 | `String`  | -            |\n| end-date               | 限定最大日期，格式必须与`format`保持一致 | `String`  | -            |\n| default-selected-value | 设置默认选中日期，不设置时默认选中当前时间    | `String`  | -            |\n| format                 | 时间格式                     | `String`  | `yyyy-MM-dd` |\n| unit                   | 是否显示单位                   | `Boolean` | `true`       |"
@@ -98,11 +110,17 @@
 	"hips-sticky": {
 		"hoverDoc": "| 参数              | 说明                                        | 类型        | 默认值                                                               |\n| --------------- | ----------------------------------------- | --------- | ----------------------------------------------------------------- |\n| position        | 必传参数，滚动位置                                 | `Number`  | -                                                                 |\n| check-top       | 是否检测顶部位置，如果为 false，则检查 sticky-ele 元素的底部边界 | `Boolean` | true                                                              |\n| fixed-animation | 元素吸附时指定 transition 的 name 值               | `String`  | `如果 checkTop 为 true，则为 ''，如果为 false，则为 'hips-sticky__fixed-fade'` |\n| offset          | 偏移值，传入的 pos 的值会加上这个值修正                    | `Number`  | `0`                                                               |"
 	},
+	"hips-sticky-ele": {
+		"hoverDoc": "| 参数      | 说明          | 类型       | 默认值      |   |\n| ------- | ----------- | -------- | -------- | - |\n| ele-key | 吸顶元素的 key 值 | \\`Number | String\\` | - |"
+	},
 	"hips-swipeout-list": {
 		"hoverDoc": "| 参数            | 说明                | 类型        | 默认值      |      |\n| ------------- | ----------------- | --------- | -------- | ---- |\n| list          | 列表数据              | `Array`   | -        |      |\n| left-buttons  | 左侧按钮数据            | `Array`   | -        |      |\n| right-buttons | 右侧按钮数据            | `Array`   | -        |      |\n| sensitivity   | 滑动阈值，超过就触发自动关闭/开启 | \\`String  | Number\\` | `80` |\n| disabled      | 是否禁用              | `Boolean` | `false`  |      |\n| autoClose     | 点击按钮后是否自动关闭       | `Boolean` | `true`   |      |"
 	},
 	"hips-swipeout": {
 		"hoverDoc": "| 参数                   | 说明                  | 类型        | 默认值      |      |\n| -------------------- | ------------------- | --------- | -------- | ---- |\n| sensitivity          | 滑动阈值，超过就触发自动关闭/开启   | \\`String  | Number\\` | `40` |\n| disabled             | 是否禁用                | `Boolean` | `false`  |      |\n| left-auto-show       | 滑动时左侧按钮是否自动展示       | `Boolean` | `false`  |      |\n| right-auto-show      | 滑动时右侧按钮是否自动展示       | `Boolean` | `true`   |      |\n| click-out-side-close | 点击 swipeout 外部时是否关闭 | `Boolean` | `true`   |      |"
+	},
+	"hips-swipeout-button": {
+		"hoverDoc": "| 参数        | 说明     | 类型       | 默认值      |      |\n| --------- | ------ | -------- | -------- | ---- |\n| width     | 按钮宽度   | \\`String | Number\\` | `40` |\n| bgColor   | 按钮背景颜色 | `String` | `#fff`   |      |\n| fontColor | 文本颜色   | `String` | `#000`   |      |"
 	},
 	"hips-switch-cell": {
 		"hoverDoc": "| 参数       | 说明      | 类型        | 默认值     |\n| -------- | ------- | --------- | ------- |\n| v-model  | 开关状态    | `Boolean` | -       |\n| title    | 左侧标题    | `String`  | `''`    |\n| loading  | 是否为加载状态 | `Boolean` | `false` |\n| disabled | 是否为禁用状态 | `Boolean` | `false` |"
@@ -113,8 +131,14 @@
 	"hips-tab-bar": {
 		"hoverDoc": "| 参数           | 说明          | 类型        | 默认值                                                                                               |\n| ------------ | ----------- | --------- | ------------------------------------------------------------------------------------------------- |\n| v-model      | 当前选中标签的索引   | `Number`  | -                                                                                                 |\n| active-color | 设置当前选中标签的颜色 | `String`  | <div style=\"background: #1f8ceb;width: 10px;height: 10px;display: inline-block;\"></div> `#1f8ceb` |\n| fixed        | 是否固定在底部     | `Boolean` | `true`                                                                                            |\n| z-index      | 元素 z-index  | `Number`  | `1`                                                                                               |"
 	},
+	"hips-tab-bar-item": {
+		"hoverDoc": "| 参数          | 说明                         | 类型        | 默认值      |      |\n| ----------- | -------------------------- | --------- | -------- | ---- |\n| icon        | 图标名称 (可选值见 Icon 组件)        | `String`  | -        |      |\n| text        | 标签栏对应的显示内容                 | `String`  | -        |      |\n| dot         | 是否显示小红点                    | `Boolean` | -        |      |\n| badge-value | 图标右上角提示信息                  | \\`String  | Number\\` | -    |\n| max-value   | 图标右上角徽章值的最大显示值             | \\`String  | Number\\` | `99` |\n| url         | 跳转链接                       | `String`  | -        |      |\n| to          | 路由跳转对象，同 `vue-router` 的 to | \\`String  | Object\\` | -    |\n| replace     | 跳转时是否替换当前 history          | `String`  | `false`  |      |"
+	},
 	"hips-tabs": {
 		"hoverDoc": "| 参数              | 说明                  | 类型        | 默认值     |\n| --------------- | ------------------- | --------- | ------- |\n| v-model         | 当前激活标签的索引           | `Number`  | `0`     |\n| color           | 标签底部条颜色             | `String`  | -       |\n| type            | 样式类型，可选值为`card`     | `String`  | `line`  |\n| duration        | 动画时间 (单位毫秒)         | `Number`  | `300`   |\n| slider-width    | 底部条宽度 (px)          | `Number`  | -       |\n| slider-height   | 底部条高度 (px)          | `Number`  | -       |\n| swipe-threshold | 滚动阈值，设置标签数量超过多少个可滚动 | `Number`  | `4`     |\n| animated        | 是否开启切换标签内容时的转场动画    | `Boolean` | `false` |\n| swipeable       | 是否可以滑动内容切换          | `Boolean` | `false` |"
+	},
+	"hips-tab": {
+		"hoverDoc": "| 参数       | 说明     | 类型        | 默认值     |\n| -------- | ------ | --------- | ------- |\n| title    | 标题     | `String`  | -       |\n| disabled | 是否禁用标签 | `Boolean` | `false` |"
 	},
 	"hips-tag": {
 		"hoverDoc": "| 参数       | 说明       | 类型        | 可选值                          | 默认值       |\n| -------- | -------- | --------- | ---------------------------- | --------- |\n| type     | 标签类型     | `String`  | `primary/success/error/warn` | `primary` |\n| color    | 标签背景颜色   | `String`  | `-`                          | `-`       |\n| size     | 标签大小     | `String`  | `small/large/mini`           | `default` |\n| closable | 标签是否可以移除 | `Boolean` | `-`                          | `false`   |"
@@ -124,6 +148,9 @@
 	},
 	"hips-timeline": {
 		"hoverDoc": "| 参数      | 说明          | 类型        | 可选值 | 默认值     |\n| ------- | ----------- | --------- | --- | ------- |\n| pending | 是否有最后一个幽灵节点 | `Boolean` | `-` | `false` |"
+	},
+	"hips-timeline-item": {
+		"hoverDoc": "| 参数      | 说明   | 类型       | 可选值    | 默认值    |\n| ------- | ---- | -------- | ------ | ------ |\n| color   | 节点颜色 | `String` | `任意色值` | `blue` |\n| title   | 节点标题 | `String` | `-`    | `-`    |\n| content | 节点内容 | `String` | `-`    | `-`    |"
 	},
 	"hips-tip": {
 		"hoverDoc": "| 参数                   | 说明             | 类型        | 默认值      | 可选值                     |   |\n| -------------------- | -------------- | --------- | -------- | ----------------------- | - |\n| direction            | 小三角的方向         | `String`  | `top`    | `top/bottom/left/right` |   |\n| offsetLeft           | 小三角至 Tip 框左边距离 | \\`Number  | String\\` | `0`                     | - |\n| offsetTop            | 小三角至 Tip 框顶部距离 | \\`Number  | String\\` | `0`                     | - |\n| offsetRight          | 小三角至 Tip 框右边距离 | \\`Number  | String\\` | `0`                     | - |\n| offsetBottom         | 小三角至 Tip 框底部距离 | \\`Number  | String\\` | `0`                     | - |\n| click-out-side-close | 点击外部是否关闭 tip   | `Boolean` | `false`  | -                       |   |\n| closeable            | 是否显示关闭按钮       | `Boolean` | `false`  | -                       |   |"
