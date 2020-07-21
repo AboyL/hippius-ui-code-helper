@@ -1,6 +1,7 @@
 import * as vscode from 'vscode';
 import { HippiusCompletionItemProvider } from './completion';
-import registerCompletionItemProviderWebview from './site/openSite';
+import registerWebview from './site/openSite';
+import registerHover from './hover-provider';
 
 export function activate(context: vscode.ExtensionContext) {
 
@@ -10,9 +11,11 @@ export function activate(context: vscode.ExtensionContext) {
 	}, {
 		language: 'html', scheme: 'file'
 	}], completionItemProvider, '', ' ', ':', '<', '"', "'", '/', '@', '(');
-	
-	registerCompletionItemProviderWebview(context);
 	context.subscriptions.push(completion);
+	
+	registerWebview(context);
+	registerHover(context);
+
 
 }
 

@@ -4,7 +4,7 @@
     "body": [
       "<hips-view>",
       "\t$1",
-      "</hips-view"
+      "</hips-view>"
     ],
     "description": "新建 hips-view"
   },
@@ -20,7 +20,7 @@
     "body": [
       "<hips-row>",
       "\t$1",
-      "</hips-row"
+      "</hips-row>"
     ],
     "description": "新建 hips-row"
   },

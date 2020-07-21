@@ -56,10 +56,10 @@ const dispose = (uri: vscode.Uri) => {
   });
 };
 
-const registerCompletionItemProviderWebview = function (context: vscode.ExtensionContext) {
+const registerWebview = function (context: vscode.ExtensionContext) {
   context.subscriptions.push(
     vscode.commands.registerCommand('hippius.search', dispose),
   );
 };
 
-export default registerCompletionItemProviderWebview;
+export default registerWebview;
