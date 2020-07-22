@@ -139,7 +139,6 @@ const run = () => {
               const multiple = tableRow.children.length - trLength;
               if (multiple) {
                 const optionTypeList = [];
-                // debugger;
                 for (let j = 0; j <= multiple; j++) {
                   optionTypeList.push(
                     tableRow.children[tableCellIndex + j].children[0].value.toLocaleLowerCase().replace('`', '')

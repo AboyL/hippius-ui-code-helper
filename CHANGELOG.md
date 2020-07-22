@@ -1,8 +1,8 @@
-# Change Log
 
-All notable changes to the "hippius-ui-code-helper" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [0.1.0]
+- 组件属性补全功能
+- 内置文档功能
+- 组件悬浮提示功能
 
 ## [Unreleased]
 

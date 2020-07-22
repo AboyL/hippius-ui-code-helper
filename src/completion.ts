@@ -214,7 +214,7 @@ export class HippiusCompletionItemProvider implements CompletionItemProvider {
   provideCompletionItems(document: TextDocument, position: Position, token: CancellationToken, context: CompletionContext): ProviderResult<CompletionItem[] | CompletionList> {
     this._document = document;
     this._position = position;
-
+    
     const config = workspace.getConfiguration('hippius-ui-code-helper');
 
     const normalQuotes = config.get('quotes') === 'double' ? '"' : "'";

@@ -1,0 +1,58 @@
+{
+  "$hips.validate":{
+    "prefix": "this.$hips.validate",
+    "body": [
+      "this.$hips.validate({$1})"
+    ],
+    "description": "$hips.validate"
+  },
+  "$hips.toast": {
+    "prefix": "this.$hips.toast",
+    "body": [
+      "this.$hips.toast({$1})"
+    ],
+    "description": "$hips.toast"
+  },
+  "$hips.notify": {
+    "prefix": "this.$hips.notify",
+    "body": [
+      "this.$hips.notify({$1})"
+    ],
+    "description": "$hips.notify"
+  },
+  "$hips.dialog.alert": {
+    "prefix": "this.$hips.dialog.alert",
+    "body": [
+      "this.$hips.dialog.alert({$1})"
+    ],
+    "description": "$hips.dialog.alert"
+  },
+  "$hips.dialog.confirm": {
+    "prefix": "this.$hips.dialog.confirm",
+    "body": [
+      "this.$hips.dialog.confirm({$1})"
+    ],
+    "description": "$hips.dialog.confirm"
+  },
+  "$hips.imagePreview.show": {
+    "prefix": "this.$hips.imagePreview.show",
+    "body": [
+      "this.$hips.imagePreview.show({$1})"
+    ],
+    "description": "$hips.imagePreview.show"
+  },
+  "$hips.imagePreview.destroy": {
+    "prefix": "this.$hips.imagePreview.destroy",
+    "body": [
+      "this.$hips.imagePreview.destroy()"
+    ],
+    "description": "$hips.imagePreview.destroy"
+  },
+  "$hips.previewer.show": {
+    "prefix": "this.$hips.previewer.show",
+    "body": [
+      "this.$hips.previewer.show({$1})"
+    ],
+    "description": "$hips.previewer.show"
+  }
+}

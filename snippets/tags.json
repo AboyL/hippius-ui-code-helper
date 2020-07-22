@@ -79,7 +79,7 @@
   "hips-button": {
     "prefix": "hips-button",
     "body": [
-      "<hips-button $1 ></hips-button>"
+      "<hips-button $0 ></hips-button>"
     ],
     "description": "新建 hips-button"
   },
@@ -95,7 +95,7 @@
   "hips-cell": {
     "prefix": "hips-cell",
     "body": [
-      "<hips-cell $1 ></hips-cell>"
+      "<hips-cell $0 ></hips-cell>"
     ],
     "description": "新建 hips-cell"
   },
@@ -129,7 +129,7 @@
   "hips-spin": {
     "prefix": "hips-spin",
     "body": [
-      "<hips-spin $1 ></hips-spin>"
+      "<hips-spin $0 ></hips-spin>"
     ],
     "description": "新建 hips-spin"
   },
@@ -145,42 +145,42 @@
   "hips-timeline-item": {
     "prefix": "hips-timeline-item",
     "body": [
-      "<hips-timeline-item $1 ></hips-timeline-item>"
+      "<hips-timeline-item $0 ></hips-timeline-item>"
     ],
     "description": "新建 hips-timeline-item"
   },
   "hips-picker": {
     "prefix": "hips-picker",
     "body": [
-      "<hips-picker $1 ></hips-picker>"
+      "<hips-picker $0 ></hips-picker>"
     ],
     "description": "新建 hips-picker"
   },
   "hips-datetime": {
     "prefix": "hips-datetime",
     "body": [
-      "<hips-datetime $1 ></hips-datetime>"
+      "<hips-datetime $0 ></hips-datetime>"
     ],
     "description": "新建 hips-datetime"
   },
   "hips-circle": {
     "prefix": "hips-circle",
     "body": [
-      "<hips-circle $1 ></hips-circle>"
+      "<hips-circle $0 ></hips-circle>"
     ],
     "description": "新建 hips-circle"
   },
   "hips-progress": {
     "prefix": "hips-progress",
     "body": [
-      "<hips-progress $1 ></hips-progress>"
+      "<hips-progress $0 ></hips-progress>"
     ],
     "description": "新建 hips-progress"
   },
   "hips-tip": {
     "prefix": "hips-tip",
     "body": [
-      "<hips-tip $1 ></hips-tip>"
+      "<hips-tip $0 ></hips-tip>"
     ],
     "description": "新建 hips-tip"
   },
@@ -196,21 +196,21 @@
   "hips-input": {
     "prefix": "hips-input",
     "body": [
-      "<hips-input $1 ></hips-input>"
+      "<hips-input $0 ></hips-input>"
     ],
     "description": "新建 hips-input"
   },
   "hips-search": {
     "prefix": "hips-search",
     "body": [
-      "<hips-search $1 ></hips-search>"
+      "<hips-search $0 ></hips-search>"
     ],
     "description": "新建 hips-search"
   },
   "hips-textarea": {
     "prefix": "hips-textarea",
     "body": [
-      "<hips-textarea $1 ></hips-textarea>"
+      "<hips-textarea $0 ></hips-textarea>"
     ],
     "description": "新建 hips-textarea"
   },
@@ -235,63 +235,63 @@
   "hips-checkbox": {
     "prefix": "hips-checkbox",
     "body": [
-      "<hips-checkbox $1 ></hips-checkbox>"
+      "<hips-checkbox $0 ></hips-checkbox>"
     ],
     "description": "新建 hips-checkbox"
   },
   "hips-rate": {
     "prefix": "hips-rate",
     "body": [
-      "<hips-rate $1 ></hips-rate>"
+      "<hips-rate $0 ></hips-rate>"
     ],
     "description": "新建 hips-rate"
   },
   "hips-stepper": {
     "prefix": "hips-stepper",
     "body": [
-      "<hips-stepper $1 ></hips-stepper>"
+      "<hips-stepper $0 ></hips-stepper>"
     ],
     "description": "新建 hips-stepper"
   },
   "hips-switch": {
     "prefix": "hips-switch",
     "body": [
-      "<hips-switch $1 ></hips-switch>"
+      "<hips-switch $0 ></hips-switch>"
     ],
     "description": "新建 hips-switch"
   },
   "hips-switch-cell": {
     "prefix": "hips-switch-cell",
     "body": [
-      "<hips-switch-cell $1 ></hips-switch-cell>"
+      "<hips-switch-cell $0 ></hips-switch-cell>"
     ],
     "description": "新建 hips-switch-cell"
   },
   "hips-uploader": {
     "prefix": "hips-uploader",
     "body": [
-      "<hips-uploader $1 ></hips-uploader>"
+      "<hips-uploader $0 ></hips-uploader>"
     ],
     "description": "新建 hips-uploader"
   },
   "hips-number-keyboard": {
     "prefix": "hips-number-keyboard",
     "body": [
-      "<hips-number-keyboard $1 ></hips-number-keyboard>"
+      "<hips-number-keyboard $0 ></hips-number-keyboard>"
     ],
     "description": "新建 hips-number-keyboard"
   },
   "hips-signature": {
     "prefix": "hips-signature",
     "body": [
-      "<hips-signature $1 ></hips-signature>"
+      "<hips-signature $0 ></hips-signature>"
     ],
     "description": "新建 hips-signature"
   },
   "hips-field": {
     "prefix": "hips-field",
     "body": [
-      "<hips-field $1 ></hips-field>"
+      "<hips-field $0 ></hips-field>"
     ],
     "description": "新建 hips-field"
   },
@@ -307,16 +307,9 @@
   "hips-form-item": {
     "prefix": "hips-form-item",
     "body": [
-      "<hips-form-item $1 ></hips-form-item>"
+      "<hips-form-item $0 ></hips-form-item>"
     ],
     "description": "新建 hips-form-item"
-  },
-  "$hips.validate":{
-    "prefix": "$hips.validate",
-    "body": [
-      "$hips.validate"
-    ],
-    "description": "$hips.validate"
   },
   "hips-swipeout": {
     "prefix": "hips-swipeout",
@@ -357,7 +350,7 @@
   "hips-scroll": {
     "prefix": "hips-scroll",
     "body": [
-      "<hips-scroll $1 ></hips-scroll>"
+      "<hips-scroll $0 ></hips-scroll>"
     ],
     "description": "新建 hips-scroll"
   },
@@ -373,79 +366,30 @@
   "hips-index-list": {
     "prefix": "hips-index-list",
     "body": [
-      "<hips-index-list $1 ></hips-index-list>"
+      "<hips-index-list $0 ></hips-index-list>"
     ],
     "description": "新建 hips-index-list"
   },
   "hips-popup": {
     "prefix": "hips-popup",
     "body": [
-      "<hips-popup $1 ></hips-popup>"
+      "<hips-popup $0 ></hips-popup>"
     ],
     "description": "新建 hips-popup"
   },
   "hips-actionsheet": {
     "prefix": "hips-actionsheet",
     "body": [
-      "<hips-actionsheet $1 ></hips-actionsheet>"
+      "<hips-actionsheet $0 ></hips-actionsheet>"
     ],
     "description": "新建 hips-actionsheet"
   },
   "hips-indicator": {
     "prefix": "hips-indicator",
     "body": [
-      "<hips-indicator $1 ></hips-indicator>"
+      "<hips-indicator $0 ></hips-indicator>"
     ],
     "description": "新建 hips-indicator"
-  },
-  "$hips.toast":{
-    "prefix": "$hips.toast",
-    "body": [
-      "$hips.toast"
-    ],
-    "description": "$hips.toast"
-  },
-  "$hips.notify":{
-    "prefix": "$hips.notify",
-    "body": [
-      "$hips.notify"
-    ],
-    "description": "$hips.notify"
-  },
-  "$hips.dialog.alert":{
-    "prefix": "$hips.dialog.alert",
-    "body": [
-      "$hips.dialog.alert"
-    ],
-    "description": "$hips.dialog.alert"
-  },
-  "$hips.dialog.confirm":{
-    "prefix": "$hips.dialog.confirm",
-    "body": [
-      "$hips.dialog.confirm"
-    ],
-    "description": "$hips.dialog.confirm"
-  },
-  "$hips.imagePreview.show":{
-    "prefix": "$hips.imagePreview.show",
-    "body": [
-      "$hips.imagePreview.show"
-    ],
-    "description": "$hips.imagePreview.show"
-  },
-  "$hips.imagePreview.destroy":{
-    "prefix": "$hips.imagePreview.destroy",
-    "body": [
-      "$hips.imagePreview.destroy()"
-    ],
-    "description": "$hips.imagePreview.destroy"
-  },
-  "$hips.previewer.show":{
-    "prefix": "$hips.previewer.show",
-    "body": [
-      "$hips.previewer.show"
-    ],
-    "description": "$hips.previewer.show"
   },
   "hips-fab": {
     "prefix": "hips-fab",
@@ -459,14 +403,14 @@
   "hips-fab-item": {
     "prefix": "hips-fab-item",
     "body": [
-      "<hips-fab-item $1 ></hips-fab-item>"
+      "<hips-fab-item $0 ></hips-fab-item>"
     ],
     "description": "新建 hips-fab-item"
   },
   "hips-calendar": {
     "prefix": "hips-calendar",
     "body": [
-      "<hips-calendar $1 ></hips-calendar>"
+      "<hips-calendar $0 ></hips-calendar>"
     ],
     "description": "新建 hips-calendar"
   }

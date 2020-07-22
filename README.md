@@ -1,65 +1,29 @@
-# hippius-ui-code-helper README
+# hippius-ui-code-helper
 
-This is the README for your extension "hippius-ui-code-helper". After writing up a brief description, we recommend including the following sections.
+针对 [hippius-ui](http://hippius-ui.hips.hand-china.com/#/zh-CN/quickstart) 定制的辅助插件,可以减少你查阅文档的时间
+
+需要新增的功能，请在 `issue` 区予以提出与指正
+
+## Install
+
+[hippius-ui-code-helper](https://marketplace.visualstudio.com/items?itemName=handMS.hippius-ui-code-helper)
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## 自动补全
+![自动补全](https://raw.githubusercontent.com/Xeonice/vscode-dataset-extension/master/images/auto-completion.gif)
+弥补了 hippius 组件无法提供自动补全功能的缺陷,可以输入空格查看所有的属性进行选择,也可以输入属性的前缀快速找到对应的属性
 
-For example if there is an image subfolder under your extension project workspace:
 
-\!\[feature X\]\(images/feature-x.png\)
+## 内置文档
+![内置文档](https://raw.githubusercontent.com/Xeonice/vscode-dataset-extension/master/images/doc.gif)
+可以使用**hippius.search**命令快速查看文档。有两种使用方式
+1. 在命令面板输入**hippius.search**找到对应命令执行,选择自己需要查询文档的组件
+2. 选择需要查询文档的组件,鼠标右击选择**hippius.search**命令进行查看
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## 悬浮提示
+![悬浮提示](https://raw.githubusercontent.com/Xeonice/vscode-dataset-extension/master/images/hover.gif)
+将鼠标悬浮在 `hippius` 组件上,可以快速查看对应的API列表
 
-## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
 
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**

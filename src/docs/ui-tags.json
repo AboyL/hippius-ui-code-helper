@@ -630,6 +630,21 @@
 			}
 		}
 	},
+	"hips-fab-item": {
+		"description": "hips-fab-item",
+		"attributes": {
+			"icon": {
+				"description": "按钮图标",
+				"optionType": "string",
+				"defaultValue": "-"
+			},
+			"bg-color": {
+				"description": "按钮背景颜色",
+				"optionType": "string",
+				"defaultValue": "-"
+			}
+		}
+	},
 	"hips-field": {
 		"description": "hips-field",
 		"attributes": {
