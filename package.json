@@ -3,7 +3,7 @@
 	"displayName": "hippius-ui-code-helper",
 	"description": "hippius-ui的编码插件,帮助你更好的编写hippius-ui",
 	"repository": "https://github.com/Xeonice/vscode-dataset-extension",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"engines": {
 		"vscode": "^1.47.0"
 	},
